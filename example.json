@@ -1,0 +1,17 @@
+{
+    "security_group": {
+        "name": "example_group",
+        "description": "example description",
+        "group_id": "sg-3x4mpl3",
+        "vpc_id": "vpc-3x4mpl3",
+        "inbound": {
+            "rules": [
+                {
+                    "source": "192.168.1.1/16",
+                    "destination_ports": "0..65535",
+                    "description": "All ports open from local subnet"
+                }
+            ]
+        }
+    }
+}
